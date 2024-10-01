@@ -1,10 +1,13 @@
 /* CUSTOM PROPS */
 :root {
   /* bgs */
-  --sidebar-bg-color: #001524;
+  --sidebar-bg-color: #070707;
   --main-bg-color: #15616d;
   --header-bg-color: #78290f;
   --player-bg-color: #ff7d00;
+  /* text colors */
+  --main-text-color: #a3a3a3;
+  --alt-text-color: #eeeeee;
   /* width - height*/
   --sidebar-width: 50px;
   --player-height: 100px;
@@ -37,7 +40,7 @@ li {
 }
 
 body {
-  color: white;
+  color: var(--main-text-color);
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -103,6 +106,7 @@ body {
 }
 
 .sd-nav-icon {
+  color: var(--main-text-color);
   width: 30px;
   vertical-align: middle;
   margin-right: 5px;
