@@ -82,8 +82,6 @@ body {
 }
 
 .sidebar-body {
-  padding: 0 10px;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -95,13 +93,13 @@ body {
   flex-grow: 1;
 }
 
+.sidebar-bottom {
+  line-height: 20px;
+}
+
 .logo-container {
   height: var(--sd-logo-height);
   padding: 8px;
-}
-
-.sidebar-nav-item {
-  padding-top: 10px;
 }
 
 /* SIDEBAR PLAYLISTS */
@@ -120,11 +118,17 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+
+  margin-right: 10px;
+
   background-color: #808080;
 }
 
 #dl-icon {
   width: 15px;
+
+  margin-right: 10px;
+
   display: inline-block;
 }
 
@@ -168,15 +172,15 @@ body {
     display: inline-block;
   }
 
-  .s-d-inlineb {
+  .s-d-inline {
     display: inline;
   }
 
-  /* SIDEBAR */
-
-  .sidebar-col {
-    padding-left: 15px;
+  .s-d-block {
+    display: block;
   }
+
+  /* SIDEBAR */
 
   .sidebar-body {
     height: calc(100vh - var(--player-height) - var(--player-height));
@@ -184,7 +188,7 @@ body {
 
   .logo-container {
     height: var(--player-height);
-    padding: 20px 60px 20px 10px;
+    /* padding: 20px 60px 20px 10px; */
   }
 
   .xs-logo {
@@ -193,7 +197,7 @@ body {
 
   .sd-nav-icon {
     display: inline-block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     width: 30px;
   }
 }
