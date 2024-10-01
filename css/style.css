@@ -44,7 +44,7 @@ body {
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -72,6 +72,10 @@ body {
 
 .d-none {
   display: none;
+}
+
+.f-upper {
+  text-transform: uppercase;
 }
 
 /* SIDEBAR */
@@ -117,6 +121,11 @@ body {
 }
 
 /* SIDEBAR PLAYLISTS */
+
+#playlist-title {
+  color: var(--alt-text-color);
+  font-weight: 700;
+}
 
 .playlist-new {
   font-size: 1rem;
