@@ -7,14 +7,29 @@
     <title>Spotify</title>
     <link rel="icon" href="./img/raccoon-logo.webp" />
 
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- FONT AWESOME -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,25 +39,72 @@
       <!-- SIDEBAR -->
       <div class="sidebar-col">
         <div class="sidebar">
-          <div class="logo-container">
-            <img src="./img/logo-small.svg" alt="" />
-            <img src="./img/logo.svg" alt="" />
+          <!-- SIDEBAR HEADER -->
+          <div class="sidebar-header">
+            <div class="logo-container">
+              <img
+                src="./img/logo-small.svg"
+                class="xs-logo"
+                alt="spotify logo"
+              />
+              <img
+                src="./img/logo.svg"
+                class="s-logo d-none s-d-inlineb"
+                alt="spotify logo"
+              />
+            </div>
           </div>
-          <nav class="sidebar-nav">
-            <ul>
-              <li class="sidebar-nav-item">
-                <img src="./img/home.svg" alt="" /><span>home</span>
-              </li>
-              <li class="sidebar-nav-item">
-                <img src="./img/search.svg" alt="" /><span>cerca</span>
-              </li>
-              <li class="sidebar-nav-item">
-                <img src="./img/libreria.svg" alt="" /><span
-                  >la tua libreria</span
+          <!-- SIDEBAR BODY -->
+          <div class="sidebar-body">
+            <!-- SIDEBAR NAV -->
+            <nav class="sidebar-nav">
+              <ul>
+                <li class="sidebar-nav-item">
+                  <img class="sd-nav-icon" src="./img/home.svg" alt="" /><span
+                    class="d-none s-d-inlineb"
+                    >home</span
+                  >
+                </li>
+                <li class="sidebar-nav-item">
+                  <img class="sd-nav-icon" src="./img/search.svg" alt="" /><span
+                    class="d-none s-d-inlineb"
+                    >cerca</span
+                  >
+                </li>
+                <li class="sidebar-nav-item">
+                  <img
+                    class="sd-nav-icon"
+                    src="./img/libreria.svg"
+                    alt=""
+                  /><span class="d-none s-d-inlineb">la tua libreria</span>
+                </li>
+              </ul>
+            </nav>
+            <!-- SIDEBAR  -->
+            <div class="sidebar-main">
+              <div class="smt d-none s-d-inlineb">
+                <i class="fa-solid fa-plus"></i>
+                <span>Cerca Playlist</span>
+              </div>
+              <ul></ul>
+            </div>
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+              <div>
+                <img id="dl-icon" src="./img/download.svg" alt="" /><span
+                  class="d-none s-d-inlineb"
+                  >Installa app</span
                 >
-              </li>
-            </ul>
-          </nav>
+              </div>
+              <hr />
+              <div>
+                <img class="user-icon" src="./img/profile.svg" alt="" /><span
+                  class="d-none s-d-inlineb"
+                  >John Doe</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- MAIN -->
