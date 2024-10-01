@@ -36,6 +36,10 @@ li {
   list-style-type: none;
 }
 
+body {
+  color: white;
+}
+
 /* # UTILS */
 
 /* .container {
@@ -100,4 +104,10 @@ li {
   :root {
     --sidebar-width: 250px;
   }
+}
+
+@media screen and (min-width: 878px) {
+}
+
+@media screen and (min-width: 1440px) {
 }
