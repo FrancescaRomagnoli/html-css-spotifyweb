@@ -183,7 +183,7 @@ li {
 }
 
 .main-body {
-  height: calc(100vh - 100px);
+  height: calc(100vh - var(--player-height) - var(--player-height));
 
   background-color: var(--main-bg-color);
 }
@@ -219,32 +219,41 @@ li {
   padding: 10px;
 }
 
-/* CARD ROW FIRST */
+/* CARDS */
 
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.row-container {
-  width: 480px;
-  max-width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
-.row-title {
-  color: var(--alt-text-color);
-  padding: 0 5px;
+  /* padding: 10px; */
+  border: 1px dashed rgb(255, 255, 255);
 }
 
 .card {
-  width: 50%;
-  padding: 5px;
+  max-width: 50%;
+  min-width: 150px;
+  padding: 10px;
+
+  flex-shrink: 1;
+  flex-grow: 1;
+
+  border: 1px dashed rgb(255, 255, 255);
 }
 
-.card.odd .card-img {
-  border-radius: 50%;
+.card-header {
+  border: 1px dashed rgb(255, 255, 255);
+}
+
+.card-body {
+  border: 1px dashed rgb(255, 255, 255);
+}
+
+.text-lg {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  color: white;
 }
 
 /* PLAYER */
@@ -264,6 +273,12 @@ li {
 
 .player-song-cover {
   width: 30px;
+}
+
+.player-song-bar {
+  height: 3px;
+  width: 100px;
+  background-color: var(--main-text-color);
 }
 
 /* MEDIA QUERY */
@@ -308,12 +323,8 @@ li {
 /* TABLET */
 
 @media screen and (min-width: 878px) {
-  .row-container {
-    width: 100%;
-  }
-
   .card {
-    width: 25%;
+    max-width: calc(100% / 4);
   }
 }
 
