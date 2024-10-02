@@ -5,6 +5,7 @@
   --main-bg-color: #141922;
   --header-bg-color: #080b12;
   --player-bg-color: #282828;
+  --accent-bg-color: #ccff31;
   /* text colors */
   --main-text-color: #a3a3a3;
   --alt-text-color: #eeeeee;
@@ -279,7 +280,7 @@ li {
   width: 30px;
 }
 
-.progress-bar-container,
+.time-bar-container,
 .volume-bar-container,
 .song-info-container {
   display: flex;
@@ -298,8 +299,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  font-size: 1rem;
 }
 
 .player-buttons > .fa-circle-play {
@@ -314,11 +313,26 @@ li {
   background-color: gray;
 }
 
-.bar > .progress {
-  width: 40%;
+.volume-bar-container:hover .bar > .progress,
+.time-bar-container:hover .bar > .progress {
+  width: 30%;
   height: 4px;
   border-radius: 5px;
-  background-color: rgb(255, 0, 179);
+  background-color: var(--accent-bg-color);
+  position: relative;
+}
+.volume-bar-container:hover .bar > .progress::after,
+.time-bar-container:hover .bar > .progress::after {
+  content: " ";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: var(--alt-text-color);
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 
 /* 
