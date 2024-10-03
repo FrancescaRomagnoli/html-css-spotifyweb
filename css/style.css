@@ -119,12 +119,12 @@ li {
 .sidebar-body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
 
   padding: 10px;
 
   font-size: 0.8rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
 
   height: calc(100vh - var(--sd-logo-height) - var(--player-height));
 }
@@ -136,11 +136,12 @@ li {
   margin-right: 5px;
 }
 
-.sidebar-main {
+/* SIDEBAR PLAYLISTS */
+
+.playlist-list-container {
+  padding: 10px;
   flex-grow: 1;
 }
-
-/* SIDEBAR PLAYLISTS */
 
 #playlist-title {
   color: var(--alt-text-color);
