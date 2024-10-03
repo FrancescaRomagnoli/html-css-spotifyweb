@@ -300,77 +300,95 @@ li {
 
 .player {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
-  height: var(--player-height);
-  color: var(--alt-text-color);
-  background-color: var(--player-bg-color);
-}
-
-.player .player-box {
-  width: 30%;
-  max-width: 300px;
-  border: 1px dashed white;
-
-  display: flex;
   align-items: center;
+
+  color: white;
+  background-color: var(--player-bg-color);
+  font-size: 0.8rem;
+
+  height: 100px;
+  width: 100vw;
 }
 
-.player > .player-box:nth-child(2) {
-  flex-grow: 1;
-  max-width: 500px;
-
-  flex-direction: column;
-  justify-content: center;
+.player-box {
+  width: 30%;
+  max-width: 400px;
 }
-
-.time-bar-container,
-.volume-bar-container {
-  display: flex;
-}
-
-/* not fixed */
 
 .player-song-cover {
-  width: 30px;
+  width: 35px;
 }
 
-.player-artist-name {
-  color: var(--main-text-color);
-  font-size: 0.6rem;
-}
-
-.user-actions-box {
+.player-song {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: var(--main-text-color);
+  gap: 10px;
+  align-items: center;
 }
 
-.player-buttons {
+.player-buttons-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: space-evenly;
+  max-width: 200px;
+  padding: 5px;
+  margin: 0 auto;
+  gap: 15px;
 }
 
 .player-buttons > .fa-circle-play {
   font-size: 1.5rem;
 }
 
+.time-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volume-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.player-song-cover {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.player-user-actions > * {
+  padding: 0 5px;
+}
+
+.player-song-title,
+.time-bar-container {
+  color: var(--main-text-color);
+  font-size: 0.6rem;
+}
+
 .bar {
   height: 4px;
-  min-width: 70px;
-  max-width: 100px;
+  width: 80px;
   border-radius: 5px;
   flex-grow: 1;
   background-color: gray;
 }
 
+.time.bar {
+  min-width: 70px;
+  max-width: 300px;
+}
+
 .volume.bar {
-  min-width: 50px;
-  max-width: 60px;
+  min-width: 40px;
+  max-width: 100px;
+}
+
+.time-bar-container,
+.volume-bar-container {
+  gap: 10px;
+  padding: 0 10px;
 }
 
 .volume-bar-container:hover .bar > .progress,
