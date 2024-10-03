@@ -79,8 +79,23 @@ li {
   text-transform: uppercase;
 }
 
+/* HOVER UTILS */
+
 .hover-alt:hover {
   color: var(--alt-text-color);
+  cursor: pointer;
+}
+
+.hover-bigger:hover {
+  transform: scale(1.1);
+}
+
+.cursor-p:hover {
+  cursor: pointer;
+}
+
+.hover-bg:hover {
+  background-color: var(--alt-text-color);
 }
 
 /* SIDEBAR */
@@ -204,10 +219,6 @@ li {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 700;
-}
-
-.header-button:hover {
-  transform: scale(1.1);
 }
 
 /* MAIN NAV */
@@ -352,7 +363,7 @@ li {
   align-items: center;
   justify-content: space-evenly;
   max-width: 200px;
-  padding: 5px;
+  padding: 10px;
   margin: 0 auto;
   gap: 15px;
 }
@@ -376,6 +387,10 @@ li {
 .player-song-cover {
   width: 40px;
   margin-right: 5px;
+}
+
+.player-user-actions {
+  color: var(--main-text-color);
 }
 
 .player-user-actions > * {
