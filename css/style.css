@@ -238,13 +238,17 @@ li {
   left: 32px;
 }
 
-/* CARDS */
+/* CARD ROWS */
+
+.row-title {
+  color: var(--alt-text-color);
+  font-size: 1.5rem;
+  padding: 20px 10px;
+}
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 10px; */
-  /* border: 1px dashed rgb(255, 255, 255); */
 }
 
 .card {
@@ -263,6 +267,10 @@ li {
   /* border: 1px dashed rgb(255, 255, 255); */
 }
 
+.card-header img {
+  display: block;
+}
+
 .card-body {
   /* border: 1px dashed rgb(255, 255, 255); */
 }
@@ -275,7 +283,6 @@ li {
   color: var(--alt-text-color);
   background: rgba(0, 0, 0, 0.6);
   font-size: min(calc(20px + 2vw), 60px);
-  /* border-radius: 50%; */
   width: 100%;
   height: 100%;
   max-width: 300px;
@@ -287,13 +294,27 @@ li {
   justify-content: center;
 }
 
-.text-lg {
-  font-weight: 700;
-  font-size: 1.5rem;
+.card-body {
+  text-align: center;
 }
 
-.text-sm {
-  color: white;
+.card-text-lg {
+  font-weight: 700;
+  color: var(--alt-text-color);
+  padding: 10px;
+}
+
+.card-text-sm {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+.row.odd .card .card-header img {
+  border-radius: 50%;
+}
+
+.row.odd .card .card-header .overlay {
+  border-radius: 50%;
 }
 
 /* PLAYER */
@@ -486,5 +507,9 @@ li {
 @media screen and (min-width: 1440px) {
   .row {
     flex-wrap: nowrap;
+  }
+
+  .card {
+    max-width: 200px;
   }
 }
